@@ -24,9 +24,9 @@
                 title: "Sample 5"
             }
         ]
-        if (results.data.length > 0) {
-            const titles = results.data.map(d => d.title).filter((v, i, a) => a.indexOf(v) === i)
-            const dates = results.data.map(d => d.date).filter((v, i, a) => a.indexOf(v) === i)
+        if (data.length > 0) {
+            const titles = data.map(d => d.title).filter((v, i, a) => a.indexOf(v) === i)
+            const dates = data.map(d => d.date).filter((v, i, a) => a.indexOf(v) === i)
             for (let item of titles) {
                 const values = []
                 for (let i = 0; i < dates.length; i++) {
